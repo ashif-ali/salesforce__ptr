@@ -1,0 +1,9 @@
+<template>
+  <template if:true={records.data}>
+    <template for:each={records.data} for:item="record">
+      <p key={record.Id}>
+        {record.Name} {record.Industry} {record.Rating} <br />
+      </p>
+    </template>
+  </template>
+</template>
