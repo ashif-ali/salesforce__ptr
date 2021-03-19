@@ -1,0 +1,4 @@
+<apex:page standardController="Account">
+    Hello World, this is from dev console.
+    <apex:image value="https://i.imgur.com/3T580xL.gif"/>
+</apex:page>

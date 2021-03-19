@@ -1,0 +1,21 @@
+<template>
+  This is coming from hello world {message}
+
+  <lightning-input
+    name="firstName"
+    value={firstName}
+    onchange={handleChange}
+  ></lightning-input>
+  <lightning-input
+    name="message"
+    value={message}
+    onchange={handleChange}
+  ></lightning-input>
+  <lightning-input
+    name="location"
+    value={location}
+    onchange={handleChange}
+  ></lightning-input>
+  <br />
+  <lightning-button label="Click me" onclick={handleClick}></lightning-button>
+</template>

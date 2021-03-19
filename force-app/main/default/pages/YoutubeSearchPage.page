@@ -1,0 +1,23 @@
+<apex:page controller="YoutubeSearchController">
+    <apex:form >
+        <apex:commandButton value="Search" action="{! search }" />
+    </apex:form>
+    
+    <apex:dataTable id="teja" value="{! dataList }" var="rec" cellspacing="25">
+
+        <apex:column value="{! rec.title }" />
+        <apex:column value="{! rec.description }" />
+        <apex:column >
+            <apex:image url="{! rec.thumbnail }" alt="logo" style="border-radius: 4px;" />
+        </apex:column>
+        <apex:column value="{! rec.publishedAt }" />
+        <apex:column >
+        	<apex:outputLink value="https://www.youtube.com/watch?v={!rec.videoId}">
+            	Watch 
+            </apex:outputLink>
+        </apex:column>
+       
+		
+
+    </apex:dataTable> 
+</apex:page>

@@ -1,0 +1,17 @@
+<apex:page controller="BoxAuthDemoController" action="{! getAccessToken}">
+    
+    <style type="text/css">
+        h2#total {
+        	font-size: 20px;
+        }
+        
+    </style>
+    
+    <h2 id="total">
+        There are {!  total_records} records in this folder.
+    </h2>
+    <apex:dataTable id="table" value="{! dataList }" var="rec" cellspacing="25">
+        <apex:column value="{! rec.num}"/>
+        <apex:column id="filename" value="{! rec.name }" />
+    </apex:dataTable> 
+</apex:page>

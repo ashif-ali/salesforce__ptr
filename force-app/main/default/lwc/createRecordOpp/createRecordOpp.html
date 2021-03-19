@@ -1,0 +1,20 @@
+<template>
+  <!-- <lightning-record-form
+    record-id={recordId}
+    object-api-name="Opportunity"
+    fields={selectiveFields}
+    mode="view"
+  ></lightning-record-form> -->
+
+  <lightning-input name="oppName" onchange={handleChange}></lightning-input>
+  <lightning-input
+    type="date"
+    name="closeDate"
+    onchange={handleChange}
+  ></lightning-input>
+
+  <lightning-button
+    label="create record"
+    onclick={handleClick}
+  ></lightning-button>
+</template>

@@ -1,0 +1,8 @@
+<apex:page controller="HelloWorld2Controller">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  This is from quickfind visualforce pages
+    this is the 2nd page
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
